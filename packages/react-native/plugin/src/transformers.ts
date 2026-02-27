@@ -105,7 +105,7 @@ function transformAndroidReactHost(contents: string): string {
     }
   }
 
-  const jsBundleLine = `${paramIndent}jsBundleFilePath = HotUpdater.getJSBundleFile(applicationContext),`;
+  const jsBundleLine = `${paramIndent},jsBundleFilePath = HotUpdater.getJSBundleFile(applicationContext),`;
 
   lines.splice(closingIndex, 0, jsBundleLine);
 
